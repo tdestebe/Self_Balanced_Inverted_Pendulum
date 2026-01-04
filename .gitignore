@@ -1,0 +1,4 @@
+# Untracked files:
+# ignore freeCAD backup files
+*.FCBak
+

@@ -1,4 +1,5 @@
 # Untracked files:
 # ignore freeCAD backup files
 *.FCBak
-
+# ignore folder in work
+freeCad/underWork/

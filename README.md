@@ -12,6 +12,8 @@ The assembly of the CAD models and parts are designed with FreeCAD. Following wo
 
 - **Fasteners** for all screws and nuts
 
-- **Mesh** to create and export STL files 
+- **Mesh** to create and export STL files
 
+## 3D CAD Model:
+<img width="1936" height="1152" alt="thumbnail" src="[https://github.com/user-attachments/assets/8101cd32-f389-488b-9fec-0e81bf05d595](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/c0b105f790ec5943bb1318b3155eecfddebd1a3c/pictures/inverted_pendulum_3D_view.png)" />
     

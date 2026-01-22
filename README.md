@@ -15,5 +15,7 @@ The assembly of the CAD models and parts are designed with FreeCAD. Following wo
 - **Mesh** to create and export STL files
 
 ## 3D CAD Model:
-<img width="1936" height="1152" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/inverted_pendulum_3D_view.png" />
+<img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/inverted_pendulum_3D_view.png" />
+
+**Inverted pendulum - FreeCAD mesh export**
     

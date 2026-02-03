@@ -3,3 +3,7 @@
 *.FCBak
 # ignore folder in work
 freeCad/underWork/
+# ignore KiCad backup files
+kiCAD/pendulum_KiCAD-backups/
+kiCAD/kicadTest-backups/
+kiCAD/*.bak

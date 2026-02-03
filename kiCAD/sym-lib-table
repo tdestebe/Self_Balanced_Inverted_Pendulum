@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Nidec_24H404H160")(type "KiCad")(uri "${KIPRJMOD}/Nidec_24H404H160.kicad_sym")(options "")(descr ""))
+  (lib (name "motor_pins")(type "KiCad")(uri "${KIPRJMOD}/motor_pins.kicad_sym")(options "")(descr ""))
+)

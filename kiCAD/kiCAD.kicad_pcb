@@ -2077,8 +2077,8 @@
 		(at 147 93.5 90)
 		(descr "TO-92L leads in-line (large body variant of TO-92), also known as TO-226, wide, drill 0.75mm (see https://www.diodes.com/assets/Package-Files/TO92L.pdf and http://www.ti.com/lit/an/snoa059/snoa059.pdf)")
 		(tags "TO-92L Inline Wide transistor")
-		(property "Reference" "Q1 (2N2222)"
-			(at 9.5 -1.5 90)
+		(property "Reference" "Q1 (2N2222 - BC547)"
+			(at 15.5 0 90)
 			(layer "F.SilkS")
 			(uuid "547858ae-7462-4530-901d-d52ff1eef36b")
 			(effects
@@ -2752,7 +2752,7 @@
 	(footprint "Buzzer_Beeper:Buzzer_12x9.5RM7.6"
 		(layer "F.Cu")
 		(uuid "e1ac7898-6d50-4d3f-8e90-1b65e4edb8f4")
-		(at 140 68.9 -90)
+		(at 135 69.2 -90)
 		(descr "Generic Buzzer, D12mm height 9.5mm with RM7.6mm")
 		(tags "buzzer")
 		(property "Reference" "BZ1 (Buzzer 5V)"

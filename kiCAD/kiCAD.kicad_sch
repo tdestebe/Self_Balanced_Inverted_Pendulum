@@ -3914,7 +3914,7 @@
 				)
 			)
 		)
-		(property "Value" "2N2222"
+		(property "Value" "2N2222 - BC547"
 			(at 93.98 36.83 90)
 			(effects
 				(font

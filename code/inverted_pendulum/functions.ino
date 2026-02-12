@@ -8,11 +8,12 @@ void writeTo(byte device, byte address, byte value) {
 void angle_setup() {
   Wire.begin();
   delay (100);
+  Serial.println("Angle setup");
   writeTo(MPU6050, PWR_MGMT_1, 0);
   writeTo(MPU6050, ACCEL_CONFIG, accSens << 3); // Specifying output scaling of accelerometer
   writeTo(MPU6050, GYRO_CONFIG, gyroSens << 3); // Specifying output scaling of gyroscope
   delay (100);
-
+  Serial.println("MPU6050 is awake!");
   for (int i = 0; i < 1024; i++) {
     angle_calc();
     GyZ_offset_sum += GyZ;
@@ -113,5 +114,3 @@ void printValues() {
   Serial.print(" X2: "); Serial.print(X2);
   Serial.print(" X3: "); Serial.println(X3, 3);
 }
-
-

@@ -16,10 +16,16 @@
 const uint16_t PWM_FREQUENCY = 20000;                 // The motor driver can handle a PWM frequency up to 20kHz
 const uint16_t PWMVALUE = F_CPU / PWM_FREQUENCY / 2;  // The frequency is given by F_CPU/(2*N*ICR) - where N is the prescaler, prescaling is used so the frequency is given by F_CPU/(2*ICR) - ICR = F_CPU/PWM_FREQUENCY/2
 
-float X1 = 75.0; 
-float X2 = 5.25;   
-float X3 = 0.04;  
-float loop_time = 10;  
+float X1 = 95.0;     // angle gain
+float X2 = 14.0;     // gyro damping
+float X3 = 0.08;     // wheel speed damping
+
+//float X1 = 75.0; 
+//float X2 = 5.25;   
+//float X3 = 0.04; 
+ 
+float loop_time = 10;  // 100 Hz
+// float loop_time = 4;   // ChatGPT - 250 Hz - Reaction wheels really benefit from >200 Hz.
 
 int pwm_s = 0;
 byte dir;
@@ -72,22 +78,27 @@ void setup() {
   digitalWrite(BRAKE, HIGH);
   delay(1000);
   angle_setup();
+  Serial.println("Angle setup done!");
 }
 
 void loop() {
   currentT = millis();
+  
   if (currentT - previousT_1 >= loop_time) {
     Tuning(); 
     angle_calc();
+    
     if (vertical) {
       digitalWrite(BRAKE, HIGH);
       gyroZ = GyZ / 131.0; // Convert to deg/s
+      // gyroZ = GyZ / 65.5; // ChatGPT - Convert to deg/s - correct value for 500 dps mode.
       
       gyroZfilt = alpha * gyroZ + (1 - alpha) * gyroZfilt;
       pwm_s = -constrain(X1 * robot_angle + X2 * gyroZfilt + X3 * -motor_speed, -255, 255); 
-
+      Serial.print("Motor speed: "); Serial.println(pwm_s);
       Motor_control(pwm_s);
       motor_speed += pwm_s;
+      // motor_speed = motor_speed * 0.995 + pwm_s; // ChatGPT - This prevents fake runaway integration.
     } else {
       Motor_control(0);
       digitalWrite(BRAKE, LOW);
@@ -100,4 +111,3 @@ void loop() {
     previousT_2 = currentT;
   }
 }
-

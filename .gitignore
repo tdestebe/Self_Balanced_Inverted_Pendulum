@@ -7,3 +7,5 @@ freeCad/underWork/
 kiCAD/pendulum_KiCAD-backups/
 kiCAD/kicadTest-backups/
 kiCAD/*.bak
+# ignore video files
+videos/

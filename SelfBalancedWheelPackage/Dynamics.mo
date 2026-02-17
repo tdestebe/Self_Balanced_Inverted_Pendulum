@@ -17,9 +17,9 @@ model Dynamics
     Placement(transformation(origin = {-82, 80}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Blocks.Continuous.LimPID PID(yMax = 12, withFeedForward = true, kFF = 0.01, k = 3, controllerType = Modelica.Blocks.Types.SimpleController.PID, Td = 0.03) annotation(
     Placement(transformation(origin = {-46, 80}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.Rotational.Components.Inertia inertia(J = 5.e-6) annotation(
+  Modelica.Mechanics.Rotational.Components.Inertia inertia(J = 5.e-4) annotation(
     Placement(transformation(origin = {36, -56}, extent = {{10, -10}, {-10, 10}})));
-  Modelica.Mechanics.Rotational.Sources.ConstantTorque constantTorque(tau_constant = 0.09) annotation(
+  Modelica.Mechanics.Rotational.Sources.ConstantTorque constantTorque(tau_constant = 1.09) annotation(
     Placement(transformation(origin = {0, -56}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Blocks.Math.Gain gain(k = 1) annotation(
     Placement(transformation(origin = {-6, 80}, extent = {{-10, -10}, {10, 10}})));

@@ -3,6 +3,8 @@
 *.FCBak
 # ignore folder in work
 freeCad/underWork/
+# ignore assembly for Modelica animation
+freeCad/assembly_Pendulum_fusion.FCStd
 # ignore KiCad backup files
 kiCAD/pendulum_KiCAD-backups/
 kiCAD/kicadTest-backups/

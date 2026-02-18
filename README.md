@@ -28,20 +28,18 @@ Simulation is performed through an openModelica implementation into the package 
 
 **Inverted pendulum - Modelica main model**
 
-<img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Dynamics.svg" />
-
-**Inverted pendulum - Modelica main model**
-
-<img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Animation.svg" />
-
-**Inverted pendulum - Modelica main model**
 <table border="0" style="width: 100%;">
-  <!-- Header Row -->
+  <!-- Current Row -->
   <tr>
     <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Dynamics.svg" /></th>
     <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Animation.svg" /></th>
   </tr>
-  <!-- Content Rows -->
+  <!-- Blank Row -->
+  <tr>
+    <th style="border: none; text-align: center; font-weight: bold;"><p></p></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><p></p></th>
+  </tr>
+  <!-- Header Rows -->
   <tr>
     <td style="border: none;"><b>Inverted pendulum - Modelica Dynamics model</b></td>
     <td style="border: none;"><b>Inverted pendulum - Modelica Animation model</b></td>

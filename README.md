@@ -23,3 +23,15 @@ The assembly of the CAD models and parts are designed with FreeCAD. Following wo
 ## Simulation with openModelica
 
 Simulation is performed through an openModelica implementation into the package SelfBalancedWheelPackage. Main Modelica model **SingleWheelRobot** calls model **Dynamics** in which PID, Motor, etc are implemented and calls model **Animation** to display rotation of 3D models of the reaction wheel and the arm. 
+
+<img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/SingleWheelRobot.svg" />
+
+**Inverted pendulum - Modelica main model**
+
+<img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Dynamics.svg" />
+
+**Inverted pendulum - Modelica main model**
+
+<img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Animation.svg" />
+
+**Inverted pendulum - Modelica main model**

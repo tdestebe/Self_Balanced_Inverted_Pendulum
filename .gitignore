@@ -9,5 +9,7 @@ freeCad/assembly_Pendulum_fusion.FCStd
 kiCAD/pendulum_KiCAD-backups/
 kiCAD/kicadTest-backups/
 kiCAD/*.bak
+kiCAD/kiCAD-backups/
+kiCAD/Pendulum/
 # ignore video files
 videos/

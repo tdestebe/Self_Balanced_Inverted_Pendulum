@@ -32,16 +32,15 @@ Simulation is performed through an openModelica implementation into the package 
   <!-- Current Row -->
   <tr>
     <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Dynamics.svg" /></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><p>    </p></th>
     <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/pictures/Animation.svg" /></th>
-  </tr>
-  <!-- Blank Row -->
-  <tr>
-    <th style="border: none; text-align: center; font-weight: bold;"><p></p></th>
-    <th style="border: none; text-align: center; font-weight: bold;"><p></p></th>
   </tr>
   <!-- Header Rows -->
   <tr>
     <td style="border: none;"><b>Inverted pendulum - Modelica Dynamics model</b></td>
+    <td style="border: none; text-align: center; font-weight: bold;"><p>    </p></td>
     <td style="border: none;"><b>Inverted pendulum - Modelica Animation model</b></td>
   </tr>
 </table>
+
+Source files are available at [Self Balaced Wheel Package](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/tree/main/SelfBalancedWheelPackage)

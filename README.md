@@ -20,6 +20,10 @@ The assembly of the CAD models and parts are designed with FreeCAD. Following wo
 
 **Inverted pendulum - FreeCAD mesh export**
 
+FreeCAD files are available at [freeCad](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/tree/main/freeCad)
+
+STL 3D files are at [STL_files](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/tree/main/STL_files)
+
 ## Simulation with openModelica
 
 Simulation is performed through an openModelica implementation into the package SelfBalancedWheelPackage. Main Modelica model **SingleWheelRobot** calls model **Dynamics** in which PID, Motor, etc are implemented and calls model **Animation** to display rotation of 3D models of the reaction wheel and the arm. 
@@ -44,3 +48,49 @@ Simulation is performed through an openModelica implementation into the package 
 </table>
 
 Source files are available at [Self Balaced Wheel Package](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/tree/main/SelfBalancedWheelPackage)
+
+## Arduino code and circuits
+
+### Code (.ino)
+
+The source code for Arduino is provided at [code](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/tree/main/code). It is similar to the code written by **Remigijus** (see [remrc - One-Axis-Reaction-Wheel-Stick](https://github.com/remrc/One-Axis-Reaction-Wheel-Stick)).
+
+### Fritzing schema
+
+The schema is also identical to the original one posted by Remigijus. I just rewrote it with Fritzing, including a breadboard and stored the source at [circuit](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/tree/main/circuit).
+
+<table border="0" style="width: 100%;">
+  <!-- Current Row -->
+  <tr>
+    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/circuit/schema.svg" /></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><p>    </p></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/circuit/schema_breadboard.svg" /></th>
+  </tr>
+  <!-- Header Rows -->
+  <tr>
+    <td style="border: none;"><b>Fritzing schema - Original</b></td>
+    <td style="border: none; text-align: center; font-weight: bold;"><p>    </p></td>
+    <td style="border: none;"><b>Fritzing schema - Breadboard</b></td>
+  </tr>
+</table>
+
+### KiCad circuit
+
+In addition to Fritzing schema, I implemented KiCad schematic circuit and generated a KiCad PCB for visualisation into the 3D CAD assembly. 
+
+Kicad project is stored at [kiCAD](https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/tree/main/kiCAD).
+
+<table border="0" style="width: 100%;">
+  <!-- Current Row -->
+  <tr>
+    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/kiCAD/schema.png" /></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><p>    </p></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/kiCAD/PCB_3D_view.png" /></th>
+  </tr>
+  <!-- Header Rows -->
+  <tr>
+    <td style="border: none;"><b>KiCad circuit - Schema</b></td>
+    <td style="border: none; text-align: center; font-weight: bold;"><p>    </p></td>
+    <td style="border: none;"><b>Fritzing circuit - PCD 3D view</b></td>
+  </tr>
+</table>

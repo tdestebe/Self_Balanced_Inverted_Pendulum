@@ -62,9 +62,9 @@ The schema is also identical to the original one posted by Remigijus. I just rew
 <table border="0" style="width: 100%;">
   <!-- Current Row -->
   <tr>
-    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/circuit/schema.svg" /></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/circuit/schema.png" /></th>
     <th style="border: none; text-align: center; font-weight: bold;"><p>    </p></th>
-    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/circuit/schema_breadboard.svg" /></th>
+    <th style="border: none; text-align: center; font-weight: bold;"><img width="298" height="500" alt="thumbnail" src="https://github.com/tdestebe/Self_Balanced_Inverted_Pendulum/blob/main/circuit/schema_breadboard.png" /></th>
   </tr>
   <!-- Header Rows -->
   <tr>
@@ -91,6 +91,6 @@ Kicad project is stored at [kiCAD](https://github.com/tdestebe/Self_Balanced_Inv
   <tr>
     <td style="border: none;"><b>KiCad circuit - Schema</b></td>
     <td style="border: none; text-align: center; font-weight: bold;"><p>    </p></td>
-    <td style="border: none;"><b>Fritzing circuit - PCD 3D view</b></td>
+    <td style="border: none;"><b>KiCad circuit - PCD 3D view</b></td>
   </tr>
 </table>

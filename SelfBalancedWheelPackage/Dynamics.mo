@@ -3,7 +3,7 @@ within SelfBalancedWheelPackage;
 model Dynamics
   Modelica.Mechanics.Rotational.Interfaces.Flange_b outputSpeed annotation(
     Placement(transformation(origin = {104, -20}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {110, 22}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Electrical.Machines.BasicMachines.DCMachines.DC_PermanentMagnet dcpm(TaOperational = 293.15, Jr = 5.e-6, VaNominal = 12, wNominal(displayUnit = "rpm") = 314.1592653589793, IaNominal = 0.08, TaNominal(displayUnit = "K") = 350) annotation(
+  Modelica.Electrical.Machines.BasicMachines.DCMachines.DC_PermanentMagnet dcpm(TaOperational = 293.15, Jr = 1.e-3, VaNominal = 24, wNominal(displayUnit = "rpm") = 314.1592653589793, IaNominal = 0.08, TaNominal(displayUnit = "K") = 350) annotation(
     Placement(transformation(origin = {38, -20}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Electrical.Analog.Basic.Ground ground annotation(
     Placement(transformation(origin = {-12, -20}, extent = {{-10, -10}, {10, 10}})));
@@ -17,9 +17,9 @@ model Dynamics
     Placement(transformation(origin = {-82, 80}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Blocks.Continuous.LimPID PID(yMax = 12, withFeedForward = true, kFF = 0.01, k = 3, controllerType = Modelica.Blocks.Types.SimpleController.PID, Td = 0.03) annotation(
     Placement(transformation(origin = {-46, 80}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.Rotational.Components.Inertia inertia(J = 5.e-4) annotation(
+  Modelica.Mechanics.Rotational.Components.Inertia inertia(J = 1.e-5) annotation(
     Placement(transformation(origin = {36, -56}, extent = {{10, -10}, {-10, 10}})));
-  Modelica.Mechanics.Rotational.Sources.ConstantTorque constantTorque(tau_constant = 1.09) annotation(
+  Modelica.Mechanics.Rotational.Sources.ConstantTorque constantTorque(tau_constant = 0.5) annotation(
     Placement(transformation(origin = {0, -56}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Blocks.Math.Gain gain(k = 1) annotation(
     Placement(transformation(origin = {-6, 80}, extent = {{-10, -10}, {10, 10}})));

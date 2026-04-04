@@ -1,0 +1,81 @@
+(footprint "Breadboard"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "PCB_Prototypage"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "400cd667-0a37-4d99-bd1d-a04f17543326")
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.5)
+			)
+		)
+	)
+	(property "Value" "ElectroCookie"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f02207a3-05ac-42bd-b6ea-189622ca0bd7")
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.5)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "50ea655b-7bd1-4ecc-b3d0-994e5fddbfd4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fdc5a666-dadc-4818-b567-d3764cfa9f0f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a8782f33-baeb-47a7-bf09-2aa7a5dee300")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/PCB_Prototypage.wrl"
+		(offset
+			(xyz 0 0 -6.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

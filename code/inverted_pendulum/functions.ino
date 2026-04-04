@@ -39,6 +39,11 @@ void angle_calc() {
   AcX = Wire.read() << 8 | Wire.read(); // 0x3B (ACCEL_XOUT_H) & 0x3C (ACCEL_XOUT_L)
   AcY = Wire.read() << 8 | Wire.read(); // 0x3D (ACCEL_YOUT_H) & 0x3E (ACCEL_YOUT_L)
 
+//  Wire.requestFrom(MPU6050, 6, true); // ChatGPT
+//  AcX = Wire.read() << 8 | Wire.read();
+//  AcY = Wire.read() << 8 | Wire.read();
+//  AcZ = Wire.read() << 8 | Wire.read();
+
   Wire.beginTransmission(MPU6050);
   Wire.write(0x47);
   Wire.endTransmission(false);
@@ -56,12 +61,13 @@ void angle_calc() {
   
   if (abs(robot_angle) > 9) vertical = false;
   if (abs(robot_angle) < 0.3) vertical = true;
-  
-  //Serial.print("Angle: "); Serial.println(robot_angle);
+
+//  Serial.print(" Acc_angle: "); Serial.print(Acc_angle);
+//  Serial.print(" Angle: "); Serial.println(robot_angle);
 }
 
 void battVoltage(double voltage) {
-  //Serial.print("batt: "); Serial.println(voltage); //debug
+  // Serial.print("batt: "); Serial.println(voltage); //debug
   if (voltage > 8 && voltage <= 9.5) {
     digitalWrite(BUZZER, HIGH);
   } else {

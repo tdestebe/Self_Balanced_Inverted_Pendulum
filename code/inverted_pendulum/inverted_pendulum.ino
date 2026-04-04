@@ -17,7 +17,7 @@ const uint16_t PWM_FREQUENCY = 20000;                 // The motor driver can ha
 const uint16_t PWMVALUE = F_CPU / PWM_FREQUENCY / 2;  // The frequency is given by F_CPU/(2*N*ICR) - where N is the prescaler, prescaling is used so the frequency is given by F_CPU/(2*ICR) - ICR = F_CPU/PWM_FREQUENCY/2
 
 float X1 = 95.0;     // angle gain
-float X2 = 14.0;     // gyro damping
+float X2 = 14.0;     // gyro damping 
 float X3 = 0.08;     // wheel speed damping
 
 //float X1 = 75.0; 
@@ -25,7 +25,7 @@ float X3 = 0.08;     // wheel speed damping
 //float X3 = 0.04; 
  
 float loop_time = 10;  // 100 Hz
-// float loop_time = 4;   // ChatGPT - 250 Hz - Reaction wheels really benefit from >200 Hz.
+//float loop_time = 4;   // ChatGPT - 250 Hz - Reaction wheels really benefit from >200 Hz.
 
 int pwm_s = 0;
 byte dir;
